@@ -53,8 +53,30 @@ body{font-family:'Montserrat',Arial,sans-serif;color:#171717;}a{text-decoration:
 .bar{position:sticky;top:0;z-index:99;background:#161616;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;}
 .bar a{color:#fff;text-decoration:none;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:7px;}.bar a.dl{color:#ff7a7a;}
 .specstage{overflow:hidden;padding:14px 0;}.pages{width:794px;transform-origin:top left;}.pages .pg{box-shadow:0 3px 18px rgba(0,0,0,.12);margin:0 0 16px;}
+@media(max-width:720px){
+.bar{padding:11px 14px;}.bar a{font-size:13px;}
+.specstage{overflow:visible;padding:0;}
+.pages{width:100%!important;transform:none!important;}
+.pages .pg{width:100%;height:auto;min-height:0;overflow:visible;padding:22px 16px 26px;margin:0;box-shadow:none;border-bottom:10px solid #d9d9da;}
+.hd{flex-wrap:wrap;gap:8px;}.hd .nm{font-size:21px;}.hd .t{font-size:10px;}.hd .r{text-align:left;font-size:12px;}
+.hd .r .bookbtn{font-size:16px;padding:12px 24px;margin-top:10px;}
+.intro{font-size:12px;padding:10px 13px;}
+.hero{height:200px;margin-top:14px;}.hero .cap{font-size:21px;}
+.h2{font-size:15px;margin:18px 0 8px;}.h2 .tap{font-size:11px;}
+.fp{max-width:100%;}
+.rrow{font-size:15px;padding:13px 6px;}.rn .d{font-size:12.5px;color:#6b6b6b;display:block;margin-top:2px;}.rp{font-size:15px;}
+.fine{font-size:12px;line-height:1.6;}
+.gal{grid-template-columns:repeat(2,1fr);gap:8px;}.gal figure{height:150px;}.gal figcaption{font-size:12px;}
+.amen{columns:1;font-size:15px;line-height:2.1;}
+.foot{position:static;left:auto;right:auto;bottom:auto;margin-top:20px;}
+.foot .ftxt{font-size:16px;}.foot .fp{font-size:13.5px;padding:12px 20px;}
+.faqs,.faqs2{columns:1;column-gap:0;}
+.fcat{font-size:13px;}
+.fq{margin-bottom:12px;}.fq .q{font-size:14px;}.fq .a{font-size:12.5px;line-height:1.55;color:#555;}
+.faqfoot{position:static;left:auto;right:auto;bottom:auto;margin-top:22px;}
+}
 </style></head><body>
-<div class="bar"><a href="https://www.shamasestudios.co.za/studio/">&#8592; Back to Shamase Studios</a><a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/assets/Shamase-Studios-Spec-Sheet.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg> Download PDF</a></div>
+<div class="bar"><a href="https://www.shamasestudios.co.za/studio/">&#8592; Back to Shamase Studios</a><a class="dl" href="https://simzmkhwanazi.github.io/shamase-studio-video/spec/Shamase-Studios-Spec-Sheet.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg> Download PDF</a></div>
 <div class="specstage"><div class="pages">
 <div class="pg">
   <div class="hd"><div><div class="nm"><b>SHAMASE</b> STUDIOS</div><div class="t">Studio Hire · Spec Sheet</div></div>
@@ -284,4 +306,4 @@ body{font-family:'Montserrat',Arial,sans-serif;color:#171717;}a{text-decoration:
   <div class="fpills"><a class="fp wa" href="https://wa.me/27652898164">WhatsApp Sthe &#183; 065 289 8164</a><a class="fp go" href="https://shamasestudios.as.me/?appointmentType=category:04.%20STUDIO%20HIRE">See open studio dates &#8594;</a><a class="fp em" href="mailto:hello@shamasestudios.co.za">Email us</a></div></div>
 </div>
 </div></div>
-<script>(function(){function fit(){var w=document.querySelector('.pages');if(!w)return;var avail=document.querySelector('.specstage').clientWidth;var s=Math.min(1,avail/794);w.style.transform='scale('+s+')';document.querySelector('.specstage').style.height=w.getBoundingClientRect().height+'px';}['resize','load','orientationchange'].forEach(function(e){window.addEventListener(e,fit);});fit();[200,600,1500].forEach(function(t){setTimeout(fit,t);});})();</script></body></html>
+<script>(function(){function fit(){var w=document.querySelector('.pages');if(!w)return;var st=document.querySelector('.specstage');if(window.innerWidth<=720){w.style.transform='none';st.style.height='auto';return;}var avail=st.clientWidth;var s=Math.min(1,avail/794);w.style.transform='scale('+s+')';st.style.height=w.getBoundingClientRect().height+'px';}['resize','load','orientationchange'].forEach(function(e){window.addEventListener(e,fit);});fit();[200,600,1500].forEach(function(t){setTimeout(fit,t);});})();</script></body></html>
