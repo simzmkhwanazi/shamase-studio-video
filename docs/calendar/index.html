@@ -5,70 +5,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Montserrat',Arial,sans-serif;background:#ececef;color:#161616;-webkit-font-smoothing:antialiased;}
-.wrap{max-width:1200px;margin:0 auto;padding:0 18px 60px;}
-/* hero */
+.wrap{max-width:1280px;margin:0 auto;padding:0 18px 60px;}
 .hero{background:#141414;color:#fff;border-radius:0 0 22px 22px;padding:44px 40px 34px;margin-bottom:26px;position:relative;overflow:hidden;}
 .hero .glow{position:absolute;top:-160px;right:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(198,13,13,.5),transparent 66%);}
 .hero .ey{font-size:13px;letter-spacing:5px;font-weight:700;color:#ff5b5b;text-transform:uppercase;}
 .hero h1{font-size:44px;font-weight:900;letter-spacing:-1px;margin:8px 0 4px;position:relative;}
 .hero h1 .uln{display:block;width:56px;height:5px;background:#c60d0d;border-radius:3px;margin-top:12px;}
-.hero p{font-size:16px;color:#c9c9c9;font-weight:500;margin-top:16px;max-width:680px;line-height:1.5;}
+.hero p{font-size:16px;color:#c9c9c9;font-weight:500;margin-top:16px;max-width:720px;line-height:1.5;}
+.hero p b{color:#fff;}
 .legend{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:22px;align-items:center;}
 .legend .chip{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;color:#eaeaea;}
 .legend .dot{width:12px;height:12px;border-radius:3px;}
 .legend .sep{color:#666;}
 .stats{display:flex;gap:26px;margin-top:22px;flex-wrap:wrap;}
-.stats .s{}
 .stats .s b{font-size:26px;font-weight:900;color:#fff;}
 .stats .s span{display:block;font-size:12px;font-weight:600;color:#9a9a9a;letter-spacing:.5px;}
-/* day */
 .day{background:#fff;border-radius:18px;padding:20px 22px 24px;margin-bottom:20px;box-shadow:0 6px 24px rgba(0,0,0,.06);}
 .dhead{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid #f0f0f0;padding-bottom:12px;margin-bottom:16px;flex-wrap:wrap;}
 .dhead .dn{font-size:22px;font-weight:900;color:#c60d0d;}
-.dhead .dd{font-size:14px;font-weight:700;color:#161616;}
+.dhead .dd{font-size:14px;font-weight:700;}
 .dhead .dtheme{font-size:13px;font-weight:600;color:#8a8a8a;margin-left:auto;text-transform:uppercase;letter-spacing:1.5px;}
-.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.slots{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
 .slot{border:1px solid #eee;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;background:#fafafa;}
 .thumb{position:relative;width:100%;aspect-ratio:9/16;background:#111;}
 .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
-.fbadge{position:absolute;top:10px;left:10px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;padding:5px 11px;border-radius:20px;text-transform:uppercase;}
-.time{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.62);color:#fff;font-size:12px;font-weight:800;padding:5px 10px;border-radius:20px;}
-.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:rgba(0,0,0,.5);color:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;padding-left:5px;backdrop-filter:blur(2px);border:2px solid rgba(255,255,255,.85);}
-.body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1;}
-.angle{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#c60d0d;margin-bottom:7px;}
-.cap{font-size:13.5px;line-height:1.5;color:#242424;font-weight:500;flex:1;}
-.tags{font-size:11.5px;line-height:1.5;color:#8f8f8f;font-weight:600;margin-top:10px;}
-.copy{margin-top:12px;align-self:flex-start;background:#161616;color:#fff;border:none;font-family:inherit;font-size:12px;font-weight:700;padding:8px 15px;border-radius:20px;cursor:pointer;transition:background .15s;}
-.copy:hover{background:#c60d0d;}
-.copy.done{background:#0e7a52;}
+.fbadge{position:absolute;top:8px;left:8px;color:#fff;font-size:10px;font-weight:800;letter-spacing:.4px;padding:4px 9px;border-radius:20px;text-transform:uppercase;}
+.time{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.62);color:#fff;font-size:11px;font-weight:800;padding:4px 8px;border-radius:20px;}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:rgba(0,0,0,.5);color:#fff;font-size:20px;display:flex;align-items:center;justify-content:center;padding-left:4px;border:2px solid rgba(255,255,255,.85);}
+.body{padding:12px 12px 13px;display:flex;flex-direction:column;flex:1;}
+.cap{font-size:12px;line-height:1.45;color:#242424;font-weight:500;flex:1;}
+.tags{font-size:10.5px;line-height:1.45;color:#8f8f8f;font-weight:600;margin-top:8px;}
+.btns{display:flex;flex-direction:column;gap:7px;margin-top:11px;}
+.dl{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#c60d0d;color:#fff;text-decoration:none;font-size:12px;font-weight:800;padding:9px 12px;border-radius:9px;transition:background .15s;}
+.dl:hover{background:#a00b0b;}
+.copy{background:#fff;color:#161616;border:1.5px solid #e0e0e0;font-family:inherit;font-size:11.5px;font-weight:700;padding:8px 12px;border-radius:9px;cursor:pointer;transition:.15s;}
+.copy:hover{border-color:#161616;}
+.copy.done{background:#0e7a52;color:#fff;border-color:#0e7a52;}
 .foot{text-align:center;color:#8a8a8a;font-size:12.5px;font-weight:600;margin-top:10px;line-height:1.7;}
 .foot b{color:#c60d0d;}
-@media(max-width:820px){.slots{grid-template-columns:1fr;}.hero h1{font-size:32px;}.dhead .dtheme{margin-left:0;width:100%;}}
+@media(max-width:1100px){.slots{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.slots{grid-template-columns:1fr;}.hero h1{font-size:32px;}}
 </style></head><body>
 <div class="wrap">
   <div class="hero">
     <span class="glow"></span>
     <div class="ey">Social Media Plan</div>
     <h1>Content Calendar<span class="uln"></span></h1>
-    <p>A 14-day launch run to announce the website, 3 posts a day, leading with video. Every slot below has the ready-to-post asset, a caption and hashtags. Tap <b style="color:#fff">Copy caption</b> to grab the text.</p>
+    <p>Your full launch run, <b>5 posts a day</b>, leading with video. Every slot has the ready asset: tap <b>&#8681; Save</b> to download the image or video straight to your phone, and <b>Copy caption</b> to grab the words. No digging through folders.</p>
     <div class="legend">
-      <span class="chip"><span class="dot" style="background:#c60d0d"></span>Reel</span>
+      <span class="chip"><span class="dot" style="background:#c60d0d"></span>Reel / BTS</span>
       <span class="chip"><span class="dot" style="background:#7a4bd6"></span>Carousel</span>
       <span class="chip"><span class="dot" style="background:#0e7a52"></span>Feed post</span>
-      <span class="chip"><span class="dot" style="background:#d68a0b"></span>Story</span>
+      <span class="chip"><span class="dot" style="background:#d68a0b"></span>Story / FAQ</span>
       <span class="sep">|</span>
-      <span class="chip">Times: 08:00 &middot; 13:00 &middot; 18:30</span>
+      <span class="chip">Times: 08:00 &middot; 11:00 &middot; 14:00 &middot; 17:00 &middot; 20:00</span>
     </div>
     <div class="stats">
-      <div class="s"><b>14</b><span>DAYS</span></div>
-      <div class="s"><b>42</b><span>POSTS</span></div>
-      <div class="s"><b>3</b><span>PER DAY</span></div>
-      <div class="s"><b>19</b><span>REELS &amp; CAROUSELS</span></div>
+      <div class="s"><b>12</b><span>DAYS</span></div>
+      <div class="s"><b>60</b><span>POSTS</span></div>
+      <div class="s"><b>5</b><span>PER DAY</span></div>
+      <div class="s"><b>18</b><span>REELS &amp; CAROUSELS</span></div>
+      <div class="s"><b>13</b><span>FAQ ANSWERS</span></div>
     </div>
   </div>
   
     <section class="day">
-      <div class="dhead"><span class="dn">Day 1</span><span class="dd">Thu 02 Jul</span><span class="dtheme">Launch day</span></div>
+      <div class="dhead"><span class="dn">Day 1</span><span class="dd">Thu 02 Jul</span><span class="dtheme">Launch</span></div>
       <div class="slots">
       <div class="slot">
         <div class="thumb">
@@ -78,44 +80,86 @@ body{font-family:'Montserrat',Arial,sans-serif;background:#ececef;color:#161616;
           <span class="play">&#9658;</span>
         </div>
         <div class="body">
-          <div class="angle">Launch day</div>
           <p class="cap">Press play. This is Shamase Studios in motion: 500 m2 of open floor, cyclorama and everything you need to make the work. Book at the link in bio.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FilmStudio #StudioTour #ProductionSA #BookNow</p>
-          <button class="copy" data-t="Press play. This is Shamase Studios in motion: 500 m2 of open floor, cyclorama and everything you need to make the work. Book at the link in bio.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/brand_film.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="Press play. This is Shamase Studios in motion: 500 m2 of open floor, cyclorama and everything you need to make the work. Book at the link in bio.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #FilmStudio #StudioTour #ProductionSA #BookNow">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/02_space.png" loading="lazy" alt="02_space">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">11:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Room to build anything. 500 m2 of open floor, drive-in access and a 6 m ceiling, so your set is never fighting for space. What would you create here?</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #FilmStudio #ShootDay</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/02_space.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Room to build anything. 500 m2 of open floor, drive-in access and a 6 m ceiling, so your set is never fighting for space. What would you create here?
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #FilmStudio #ShootDay">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_01_vat.png" loading="lazy" alt="faq_01_vat">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">14:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Do our prices include VAT? No, we are not VAT-registered, so the price you see is the price you pay. Book at shamasestudios.co.za.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BookNow #NoHiddenCosts</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_01_vat.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Do our prices include VAT? No, we are not VAT-registered, so the price you see is the price you pay. Book at shamasestudios.co.za.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BookNow #NoHiddenCosts">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/03_reviews1.png" loading="lazy" alt="03_reviews1">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">17:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Don&#x27;t take our word for it. 180+ five-star reviews from the creatives who shoot here. “Shamase Studios has what no other studio has, heart.”</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives #TrustedStudio</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/03_reviews1.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Don&#x27;t take our word for it. 180+ five-star reviews from the creatives who shoot here. “Shamase Studios has what no other studio has, heart.”
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives #TrustedStudio">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/01_announce.png" loading="lazy" alt="01_announce">
           <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <span class="time">20:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Launch day</div>
           <p class="cap">Joburg, meet your next shoot location. 500 m2 of open floor, a paintable white cyclorama and a 6 m ceiling, all bookable online. This is Shamase Studios. Tap the link in bio to lock your date.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FilmStudio #PhotoStudioJohannesburg #BookNow #ProductionSA</p>
-          <button class="copy" data-t="Joburg, meet your next shoot location. 500 m2 of open floor, a paintable white cyclorama and a 6 m ceiling, all bookable online. This is Shamase Studios. Tap the link in bio to lock your date.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/01_announce.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Joburg, meet your next shoot location. 500 m2 of open floor, a paintable white cyclorama and a 6 m ceiling, all bookable online. This is Shamase Studios. Tap the link in bio to lock your date.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #FilmStudio #PhotoStudioJohannesburg #BookNow #ProductionSA">Copy caption</button>
-        </div>
-      </div>
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/08_book.png" loading="lazy" alt="08_book">
-          <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
-          
-        </div>
-        <div class="body">
-          <div class="angle">Launch day</div>
-          <p class="cap">Ready to shoot? Pick your date at shamasestudios.co.za, or WhatsApp us on 065 289 8164. Link in bio.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #ShootDay #StudioForHire #JoziCreatives</p>
-          <button class="copy" data-t="Ready to shoot? Pick your date at shamasestudios.co.za, or WhatsApp us on 065 289 8164. Link in bio.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #ShootDay #StudioForHire #JoziCreatives">Copy caption</button>
+          </div>
         </div>
       </div></div>
     </section>
@@ -124,419 +168,473 @@ body{font-family:'Montserrat',Arial,sans-serif;background:#ececef;color:#161616;
       <div class="slots">
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/teaser_space.jpg" loading="lazy" alt="teaser_space">
-          <span class="fbadge" style="background:#c60d0d">Reel</span>
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/bts_1.jpg" loading="lazy" alt="bts_1">
+          <span class="fbadge" style="background:#c60d0d">Reel · BTS</span>
           <span class="time">08:00</span>
           <span class="play">&#9658;</span>
         </div>
         <div class="body">
-          <div class="angle">Show the space</div>
-          <p class="cap">The space, in 8 seconds. 500 m2 open floor and a paintable cyclorama. Your set starts here.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #ShootDay</p>
-          <button class="copy" data-t="The space, in 8 seconds. 500 m2 open floor and a paintable cyclorama. Your set starts here.
+          <p class="cap">Behind the scenes. This is a shoot day at Shamase Studios, real crews, real energy. Book your date at the link in bio.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #ShootDay #ProductionSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/bts_1.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="Behind the scenes. This is a shoot day at Shamase Studios, real crews, real energy. Book your date at the link in bio.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #ShootDay">Copy caption</button>
-        </div>
-      </div>
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/02_space.png" loading="lazy" alt="02_space">
-          <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
-          
-        </div>
-        <div class="body">
-          <div class="angle">Show the space</div>
-          <p class="cap">Room to build anything. 500 m2 of open floor, drive-in access and a 6 m ceiling, so your set is never fighting for space. What would you create here?</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #FilmStudio #ShootDay</p>
-          <button class="copy" data-t="Room to build anything. 500 m2 of open floor, drive-in access and a 6 m ceiling, so your set is never fighting for space. What would you create here?
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #FilmStudio #ShootDay">Copy caption</button>
-        </div>
-      </div>
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/03_reviews1.png" loading="lazy" alt="03_reviews1">
-          <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
-          
-        </div>
-        <div class="body">
-          <div class="angle">Show the space</div>
-          <p class="cap">Don&#x27;t take our word for it. 180+ five-star reviews from the creatives who shoot here. “Shamase Studios has what no other studio has, heart.”</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives #TrustedStudio</p>
-          <button class="copy" data-t="Don&#x27;t take our word for it. 180+ five-star reviews from the creatives who shoot here. “Shamase Studios has what no other studio has, heart.”
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives #TrustedStudio">Copy caption</button>
-        </div>
-      </div></div>
-    </section>
-    <section class="day">
-      <div class="dhead"><span class="dn">Day 3</span><span class="dd">Sat 04 Jul</span><span class="dtheme">The canvas</span></div>
-      <div class="slots">
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/carousel_space.jpg" loading="lazy" alt="carousel_space">
-          <span class="fbadge" style="background:#7a4bd6">Carousel</span>
-          <span class="time">08:00</span>
-          <span class="play">&#9658;</span>
-        </div>
-        <div class="body">
-          <div class="angle">The canvas</div>
-          <p class="cap">Swipe through the space. 500 m2 open floor, white cyclorama, drive-in access. Room for whatever you&#x27;re building.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #FilmStudio #ProductionSA</p>
-          <button class="copy" data-t="Swipe through the space. 500 m2 open floor, white cyclorama, drive-in access. Room for whatever you&#x27;re building.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #FilmStudio #ProductionSA">Copy caption</button>
-        </div>
-      </div>
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/10_cyclorama.png" loading="lazy" alt="10_cyclorama">
-          <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
-          
-        </div>
-        <div class="body">
-          <div class="angle">The canvas</div>
-          <p class="cap">One paintable white cyclorama, endless looks. 12.5 x 10 m, seamless cove, any colour you need. Your blank canvas is ready.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #Cyclorama #WhiteCyc #PhotoStudioJohannesburg #StudioSpace</p>
-          <button class="copy" data-t="One paintable white cyclorama, endless looks. 12.5 x 10 m, seamless cove, any colour you need. Your blank canvas is ready.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #Cyclorama #WhiteCyc #PhotoStudioJohannesburg #StudioSpace">Copy caption</button>
-        </div>
-      </div>
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/07_rates.png" loading="lazy" alt="07_rates">
-          <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
-          
-        </div>
-        <div class="body">
-          <div class="angle">The canvas</div>
-          <p class="cap">Straight-up pricing. From R6 500 a day, dry hire, half-day rates and car shoots welcome. Book online in a couple of taps.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioForHire #BookNow #ShootDay #ContentCreatorSA</p>
-          <button class="copy" data-t="Straight-up pricing. From R6 500 a day, dry hire, half-day rates and car shoots welcome. Book online in a couple of taps.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioForHire #BookNow #ShootDay #ContentCreatorSA">Copy caption</button>
-        </div>
-      </div></div>
-    </section>
-    <section class="day">
-      <div class="dhead"><span class="dn">Day 4</span><span class="dd">Sun 05 Jul</span><span class="dtheme">Proof it works</span></div>
-      <div class="slots">
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/teaser_reviews.jpg" loading="lazy" alt="teaser_reviews">
-          <span class="fbadge" style="background:#c60d0d">Reel</span>
-          <span class="time">08:00</span>
-          <span class="play">&#9658;</span>
-        </div>
-        <div class="body">
-          <div class="angle">Proof it works</div>
-          <p class="cap">Five stars, on repeat. Here&#x27;s what shooting at Shamase Studios feels like, straight from our clients.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #TrustedStudio</p>
-          <button class="copy" data-t="Five stars, on repeat. Here&#x27;s what shooting at Shamase Studios feels like, straight from our clients.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #TrustedStudio">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #ShootDay #ProductionSA">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/05_trusted.png" loading="lazy" alt="05_trusted">
           <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <span class="time">11:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Proof it works</div>
           <p class="cap">The brands trust the room. Netflix, Showmax, GQ, Levi&#x27;s and more have shot at Shamase Studios. You&#x27;re in good company.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BrandCampaign #AsSeenOn #ProductionSA #TrustedStudio</p>
-          <button class="copy" data-t="The brands trust the room. Netflix, Showmax, GQ, Levi&#x27;s and more have shot at Shamase Studios. You&#x27;re in good company.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/05_trusted.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="The brands trust the room. Netflix, Showmax, GQ, Levi&#x27;s and more have shot at Shamase Studios. You&#x27;re in good company.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #BrandCampaign #AsSeenOn #ProductionSA #TrustedStudio">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/13_spotlight.png" loading="lazy" alt="13_spotlight">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_02_dryhire.png" loading="lazy" alt="faq_02_dryhire">
           <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
+          <span class="time">14:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Proof it works</div>
-          <p class="cap">“By far the best studio I have used.” That&#x27;s the bar. Come find out why 180+ creatives rate us five stars.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #TrustedStudio #JoziCreatives</p>
-          <button class="copy" data-t="“By far the best studio I have used.” That&#x27;s the bar. Come find out why 180+ creatives rate us five stars.
+          <p class="cap">What is dry hire? You get the empty space plus our white cyclorama, cleaning included. Bring your own gear or hire from us.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #DryHire #BookNow</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_02_dryhire.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="What is dry hire? You get the empty space plus our white cyclorama, cleaning included. Bring your own gear or hire from us.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #TrustedStudio #JoziCreatives">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #DryHire #BookNow">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/04_reviews2.png" loading="lazy" alt="04_reviews2">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">17:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Rated 5.0 by 180+ shoots and counting. Premium quality, friendly service, and a space that just works. Come see why.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #ContentCreatorSA #ShootInJoburg</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/04_reviews2.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Rated 5.0 by 180+ shoots and counting. Premium quality, friendly service, and a space that just works. Come see why.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #ContentCreatorSA #ShootInJoburg">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/08_book.png" loading="lazy" alt="08_book">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">20:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Ready to shoot? Pick your date at shamasestudios.co.za, or WhatsApp us on 065 289 8164. Link in bio.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #ShootDay #StudioForHire #JoziCreatives</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/08_book.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Ready to shoot? Pick your date at shamasestudios.co.za, or WhatsApp us on 065 289 8164. Link in bio.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #ShootDay #StudioForHire #JoziCreatives">Copy caption</button>
+          </div>
         </div>
       </div></div>
     </section>
     <section class="day">
-      <div class="dhead"><span class="dn">Day 5</span><span class="dd">Mon 06 Jul</span><span class="dtheme">All included</span></div>
+      <div class="dhead"><span class="dn">Day 3</span><span class="dd">Sat 04 Jul</span><span class="dtheme">The proof</span></div>
       <div class="slots">
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/carousel_amenities.jpg" loading="lazy" alt="carousel_amenities">
-          <span class="fbadge" style="background:#7a4bd6">Carousel</span>
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/bts_2.jpg" loading="lazy" alt="bts_2">
+          <span class="fbadge" style="background:#c60d0d">Reel · BTS</span>
           <span class="time">08:00</span>
           <span class="play">&#9658;</span>
         </div>
         <div class="body">
-          <div class="angle">All included</div>
-          <p class="cap">Swipe to see what&#x27;s included. Makeup rooms, barista coffee, green room and more, all on site.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #BaristaOnSet #BTS #ContentCreatorSA</p>
-          <button class="copy" data-t="Swipe to see what&#x27;s included. Makeup rooms, barista coffee, green room and more, all on site.
+          <p class="cap">BTS on the floor. 500 m2 gives the whole team room to move. Come make yours here.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #StudioSpace #ProductionSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/bts_2.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="BTS on the floor. 500 m2 gives the whole team room to move. Come make yours here.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #BaristaOnSet #BTS #ContentCreatorSA">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #StudioSpace #ProductionSA">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/06_included.png" loading="lazy" alt="06_included">
           <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <span class="time">11:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">All included</div>
           <p class="cap">Everything you need, already here. Makeup and styling rooms, barista coffee, backup power, secure parking and uncapped Wi-Fi. Just bring the vision.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #BTS #ContentCreatorSA #ShootDay</p>
-          <button class="copy" data-t="Everything you need, already here. Makeup and styling rooms, barista coffee, backup power, secure parking and uncapped Wi-Fi. Just bring the vision.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/06_included.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Everything you need, already here. Makeup and styling rooms, barista coffee, backup power, secure parking and uncapped Wi-Fi. Just bring the vision.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #BTS #ContentCreatorSA #ShootDay">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/14_coffee.png" loading="lazy" alt="14_coffee">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_03_halfday.png" loading="lazy" alt="faq_03_halfday">
           <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
+          <span class="time">14:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">All included</div>
-          <p class="cap">Great work runs on good coffee. Barista on set, a proper green room, and a team that keeps the whole crew fuelled all day.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BaristaOnSet #GreenRoom #ShootDay #ContentCreatorSA</p>
-          <button class="copy" data-t="Great work runs on good coffee. Barista on set, a proper green room, and a team that keeps the whole crew fuelled all day.
+          <p class="cap">Do we do half-days? Yes, a weekday half-day is our smallest booking. No hourly rate, just book online.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #HalfDay #BookNow</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_03_halfday.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Do we do half-days? Yes, a weekday half-day is our smallest booking. No hourly rate, just book online.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #BaristaOnSet #GreenRoom #ShootDay #ContentCreatorSA">Copy caption</button>
-        </div>
-      </div></div>
-    </section>
-    <section class="day">
-      <div class="dhead"><span class="dn">Day 6</span><span class="dd">Tue 07 Jul</span><span class="dtheme">For real productions</span></div>
-      <div class="slots">
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/reel_walkthrough.jpg" loading="lazy" alt="reel_walkthrough">
-          <span class="fbadge" style="background:#c60d0d">Reel</span>
-          <span class="time">08:00</span>
-          <span class="play">&#9658;</span>
-        </div>
-        <div class="body">
-          <div class="angle">For real productions</div>
-          <p class="cap">Take the full walkthrough. Every corner of the 500 m2 floor, in motion. Save this for your next shoot.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioTour #FilmStudio #ProductionSA #SaveThis</p>
-          <button class="copy" data-t="Take the full walkthrough. Every corner of the 500 m2 floor, in motion. Save this for your next shoot.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioTour #FilmStudio #ProductionSA #SaveThis">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #HalfDay #BookNow">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/12_numbers.png" loading="lazy" alt="12_numbers">
-          <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/13_spotlight.png" loading="lazy" alt="13_spotlight">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">17:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">For real productions</div>
-          <p class="cap">The space by the numbers. 500 m2 open floor, 6 m ceiling, 25+ secure bays and a 5.0 rating. Built for real productions.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #FilmStudio #ProductionSA #ShootInJoburg</p>
-          <button class="copy" data-t="The space by the numbers. 500 m2 open floor, 6 m ceiling, 25+ secure bays and a 5.0 rating. Built for real productions.
+          <p class="cap">“By far the best studio I have used.” That&#x27;s the bar. Come find out why 180+ creatives rate us five stars.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #TrustedStudio #JoziCreatives</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/13_spotlight.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="“By far the best studio I have used.” That&#x27;s the bar. Come find out why 180+ creatives rate us five stars.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #FilmStudio #ProductionSA #ShootInJoburg">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #TrustedStudio #JoziCreatives">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/16_book60.png" loading="lazy" alt="16_book60">
           <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
+          <span class="time">20:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">For real productions</div>
           <p class="cap">Booking takes 60 seconds. Pick your date, pay to secure, show up and shoot. That&#x27;s it. Link in bio.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #StudioForHire #ShootDay #EasyBooking</p>
-          <button class="copy" data-t="Booking takes 60 seconds. Pick your date, pay to secure, show up and shoot. That&#x27;s it. Link in bio.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/16_book60.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Booking takes 60 seconds. Pick your date, pay to secure, show up and shoot. That&#x27;s it. Link in bio.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #StudioForHire #ShootDay #EasyBooking">Copy caption</button>
+          </div>
         </div>
       </div></div>
     </section>
     <section class="day">
-      <div class="dhead"><span class="dn">Day 7</span><span class="dd">Wed 08 Jul</span><span class="dtheme">Sell the feeling</span></div>
+      <div class="dhead"><span class="dn">Day 4</span><span class="dd">Sun 05 Jul</span><span class="dtheme">Good to know</span></div>
       <div class="slots">
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/teaser_culture.jpg" loading="lazy" alt="teaser_culture">
-          <span class="fbadge" style="background:#c60d0d">Reel</span>
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/bts_3.jpg" loading="lazy" alt="bts_3">
+          <span class="fbadge" style="background:#c60d0d">Reel · BTS</span>
           <span class="time">08:00</span>
           <span class="play">&#9658;</span>
         </div>
         <div class="body">
-          <div class="angle">Sell the feeling</div>
-          <p class="cap">This is the feeling. Made for the ones who create. Come make your next thing here.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere</p>
-          <button class="copy" data-t="This is the feeling. Made for the ones who create. Come make your next thing here.
+          <p class="cap">Shoot day, unfiltered. The space, the setup, the vibe. This is Shamase Studios.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #ShootDay #JoziCreatives</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/bts_3.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="Shoot day, unfiltered. The space, the setup, the vibe. This is Shamase Studios.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #ShootDay #JoziCreatives">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/07_rates.png" loading="lazy" alt="07_rates">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">11:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Straight-up pricing. From R6 500 a day, dry hire, half-day rates and car shoots welcome. Book online in a couple of taps.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioForHire #BookNow #ShootDay #ContentCreatorSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/07_rates.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Straight-up pricing. From R6 500 a day, dry hire, half-day rates and car shoots welcome. Book online in a couple of taps.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioForHire #BookNow #ShootDay #ContentCreatorSA">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_04_hours.png" loading="lazy" alt="faq_04_hours">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">14:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Our hours are 8am to 6pm, with overtime at R1 000/hour after that. Plan your day and book online.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #ShootDay #BookNow</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_04_hours.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Our hours are 8am to 6pm, with overtime at R1 000/hour after that. Plan your day and book online.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #ShootDay #BookNow">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/18_reviews3.png" loading="lazy" alt="18_reviews3">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">17:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Loved by creatives across Joburg. “Great facility, beautiful space, and the coffee rocks.” 5.0 from 180+ reviews.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives #TrustedStudio</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/18_reviews3.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Loved by creatives across Joburg. “Great facility, beautiful space, and the coffee rocks.” 5.0 from 180+ reviews.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives #TrustedStudio">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/21_vision.png" loading="lazy" alt="21_vision">
-          <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">20:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Sell the feeling</div>
           <p class="cap">You bring the vision. We hold the space. Everything else is handled, so you can stay in the work.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere #JoziCreatives</p>
-          <button class="copy" data-t="You bring the vision. We hold the space. Everything else is handled, so you can stay in the work.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/21_vision.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="You bring the vision. We hold the space. Everything else is handled, so you can stay in the work.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere #JoziCreatives">Copy caption</button>
-        </div>
-      </div>
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/04_reviews2.png" loading="lazy" alt="04_reviews2">
-          <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
-          
-        </div>
-        <div class="body">
-          <div class="angle">Sell the feeling</div>
-          <p class="cap">Rated 5.0 by 180+ shoots and counting. Premium quality, friendly service, and a space that just works. Come see why.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #ContentCreatorSA #ShootInJoburg</p>
-          <button class="copy" data-t="Rated 5.0 by 180+ shoots and counting. Premium quality, friendly service, and a space that just works. Come see why.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #ContentCreatorSA #ShootInJoburg">Copy caption</button>
+          </div>
         </div>
       </div></div>
     </section>
     <section class="day">
-      <div class="dhead"><span class="dn">Day 8</span><span class="dd">Thu 09 Jul</span><span class="dtheme">Brands + value</span></div>
+      <div class="dhead"><span class="dn">Day 5</span><span class="dd">Mon 06 Jul</span><span class="dtheme">Sell the feeling</span></div>
       <div class="slots">
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/carousel_reviews.jpg" loading="lazy" alt="carousel_reviews">
-          <span class="fbadge" style="background:#7a4bd6">Carousel</span>
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/bts_4.jpg" loading="lazy" alt="bts_4">
+          <span class="fbadge" style="background:#c60d0d">Reel · BTS</span>
           <span class="time">08:00</span>
           <span class="play">&#9658;</span>
         </div>
         <div class="body">
-          <div class="angle">Brands + value</div>
-          <p class="cap">Swipe through the love. 180+ five-star reviews from real Joburg creatives.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives</p>
-          <button class="copy" data-t="Swipe through the love. 180+ five-star reviews from real Joburg creatives.
+          <p class="cap">From first setup to the last frame. Behind the scenes on our floor. Your production is next.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #ProductionSA #FilmStudio</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/bts_4.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="From first setup to the last frame. Behind the scenes on our floor. Your production is next.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #ProductionSA #FilmStudio">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/09_brands.png" loading="lazy" alt="09_brands">
           <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <span class="time">11:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Brands + value</div>
           <p class="cap">The studio Joburg&#x27;s brands keep coming back to. If it&#x27;s ready for the campaigns you&#x27;ve seen, it&#x27;s ready for yours.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BrandCampaign #ProductionSA #AsSeenOn #JoziCreatives</p>
-          <button class="copy" data-t="The studio Joburg&#x27;s brands keep coming back to. If it&#x27;s ready for the campaigns you&#x27;ve seen, it&#x27;s ready for yours.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/09_brands.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="The studio Joburg&#x27;s brands keep coming back to. If it&#x27;s ready for the campaigns you&#x27;ve seen, it&#x27;s ready for yours.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #BrandCampaign #ProductionSA #AsSeenOn #JoziCreatives">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/17_free.png" loading="lazy" alt="17_free">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_05_secure.png" loading="lazy" alt="faq_05_secure">
           <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
+          <span class="time">14:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Brands + value</div>
-          <p class="cap">The extras are on us. Backup generator, all-day coffee, shoe covers for the cove, steamer and change room. Free while you shoot.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ShootDay #StudioSpace #ContentCreatorSA #ValueForMoney</p>
-          <button class="copy" data-t="The extras are on us. Backup generator, all-day coffee, shoe covers for the cove, steamer and change room. Free while you shoot.
+          <p class="cap">How to lock your date: book online, we hold it 48 hours, and full payment by EFT confirms it. Payment holds the date.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BookNow #HowToBook</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_05_secure.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="How to lock your date: book online, we hold it 48 hours, and full payment by EFT confirms it. Payment holds the date.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #ShootDay #StudioSpace #ContentCreatorSA #ValueForMoney">Copy caption</button>
-        </div>
-      </div></div>
-    </section>
-    <section class="day">
-      <div class="dhead"><span class="dn">Day 9</span><span class="dd">Fri 10 Jul</span><span class="dtheme">Car shoots</span></div>
-      <div class="slots">
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/reel_teaser.jpg" loading="lazy" alt="reel_teaser">
-          <span class="fbadge" style="background:#c60d0d">Reel</span>
-          <span class="time">08:00</span>
-          <span class="play">&#9658;</span>
-        </div>
-        <div class="body">
-          <div class="angle">Car shoots</div>
-          <p class="cap">Quick look inside the room. 500 m2 of possibility. Book the space at the link in bio.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FilmStudio #StudioSpace #BookNow</p>
-          <button class="copy" data-t="Quick look inside the room. 500 m2 of possibility. Book the space at the link in bio.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #FilmStudio #StudioSpace #BookNow">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BookNow #HowToBook">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/11_car.png" loading="lazy" alt="11_car">
-          <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/26_company.png" loading="lazy" alt="26_company">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">17:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Car shoots</div>
-          <p class="cap">Yes, you can drive onto the cove. Car and commercial shoots welcome through our drive-in roller door. Bring the whole rig.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #CarShoot #CommercialShoot #AutomotivePhotography #ProductionSA</p>
-          <button class="copy" data-t="Yes, you can drive onto the cove. Car and commercial shoots welcome through our drive-in roller door. Bring the whole rig.
+          <p class="cap">You&#x27;re in good company. 180+ five-star creatives have shot here. Your name&#x27;s next.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ForTheCreatives #JoziCreatives #ClientLove</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/26_company.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="You&#x27;re in good company. 180+ five-star creatives have shot here. Your name&#x27;s next.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #CarShoot #CommercialShoot #AutomotivePhotography #ProductionSA">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ForTheCreatives #JoziCreatives #ClientLove">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/22_create.png" loading="lazy" alt="22_create">
           <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
+          <span class="time">20:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Car shoots</div>
           <p class="cap">Made for the ones who create. This is where the ideas get room to become real.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere</p>
-          <button class="copy" data-t="Made for the ones who create. This is where the ideas get room to become real.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/22_create.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Made for the ones who create. This is where the ideas get room to become real.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere">Copy caption</button>
+          </div>
         </div>
       </div></div>
     </section>
     <section class="day">
-      <div class="dhead"><span class="dn">Day 10</span><span class="dd">Sat 11 Jul</span><span class="dtheme">Big crews</span></div>
+      <div class="dhead"><span class="dn">Day 6</span><span class="dd">Tue 07 Jul</span><span class="dtheme">Big productions</span></div>
+      <div class="slots">
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/bts_5.jpg" loading="lazy" alt="bts_5">
+          <span class="fbadge" style="background:#c60d0d">Reel · BTS</span>
+          <span class="time">08:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">The magic between the frames. Behind the scenes at Shamase Studios. Tap the link to book.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #ShootDay #BookNow</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/bts_5.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="The magic between the frames. Behind the scenes at Shamase Studios. Tap the link to book.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #BTS #BehindTheScenes #ShootDay #BookNow">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/10_cyclorama.png" loading="lazy" alt="10_cyclorama">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">11:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">One paintable white cyclorama, endless looks. 12.5 x 10 m, seamless cove, any colour you need. Your blank canvas is ready.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #Cyclorama #WhiteCyc #PhotoStudioJohannesburg #StudioSpace</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/10_cyclorama.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="One paintable white cyclorama, endless looks. 12.5 x 10 m, seamless cove, any colour you need. Your blank canvas is ready.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #Cyclorama #WhiteCyc #PhotoStudioJohannesburg #StudioSpace">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_06_pencil.png" loading="lazy" alt="faq_06_pencil">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">14:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">A pencil booking is a free 3-day hold while you plan. It does not confirm the date, first to pay in full gets it.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BookNow #PencilBooking</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_06_pencil.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="A pencil booking is a free 3-day hold while you plan. It does not confirm the date, first to pay in full gets it.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BookNow #PencilBooking">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/carousel_amenities.jpg" loading="lazy" alt="carousel_amenities">
+          <span class="fbadge" style="background:#7a4bd6">Carousel</span>
+          <span class="time">17:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">Swipe to see what&#x27;s included. Makeup rooms, barista coffee, green room and more, all on site.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #BaristaOnSet #BTS #ContentCreatorSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/carousel_amenities.mp4" target="_blank" rel="noopener">&#8681; Save all</a>
+            <button class="copy" data-t="Swipe to see what&#x27;s included. Makeup rooms, barista coffee, green room and more, all on site.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #BaristaOnSet #BTS #ContentCreatorSA">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/23_breathe.png" loading="lazy" alt="23_breathe">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">20:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Big ideas need room to breathe. 500 m2 of it. Come stretch out.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #CreativeSpace #StudioSpace #ForTheCreatives</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/23_breathe.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Big ideas need room to breathe. 500 m2 of it. Come stretch out.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #CreativeSpace #StudioSpace #ForTheCreatives">Copy caption</button>
+          </div>
+        </div>
+      </div></div>
+    </section>
+    <section class="day">
+      <div class="dhead"><span class="dn">Day 7</span><span class="dd">Wed 08 Jul</span><span class="dtheme">Behind the scenes</span></div>
       <div class="slots">
       <div class="slot">
         <div class="thumb">
@@ -546,153 +644,91 @@ body{font-family:'Montserrat',Arial,sans-serif;background:#ececef;color:#161616;
           <span class="play">&#9658;</span>
         </div>
         <div class="body">
-          <div class="angle">Big crews</div>
           <p class="cap">Swipe for the how-to. Rates, booking and everything you need to lock your shoot date.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #StudioForHire #ShootDay</p>
-          <button class="copy" data-t="Swipe for the how-to. Rates, booking and everything you need to lock your shoot date.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/carousel_book.mp4" target="_blank" rel="noopener">&#8681; Save all</a>
+            <button class="copy" data-t="Swipe for the how-to. Rates, booking and everything you need to lock your shoot date.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #StudioForHire #ShootDay">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/15_crew.png" loading="lazy" alt="15_crew">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/11_car.png" loading="lazy" alt="11_car">
           <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <span class="time">11:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Big crews</div>
-          <p class="cap">Big production? Bring the whole team. Open floor, drive-in access and 3-phase power, with room for 80+ crew.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ProductionSA #FilmCrew #BigProduction #ShootInJoburg</p>
-          <button class="copy" data-t="Big production? Bring the whole team. Open floor, drive-in access and 3-phase power, with room for 80+ crew.
+          <p class="cap">Yes, you can drive onto the cove. Car and commercial shoots welcome through our drive-in roller door. Bring the whole rig.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #CarShoot #CommercialShoot #AutomotivePhotography #ProductionSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/11_car.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Yes, you can drive onto the cove. Car and commercial shoots welcome through our drive-in roller door. Bring the whole rig.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #ProductionSA #FilmCrew #BigProduction #ShootInJoburg">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #CarShoot #CommercialShoot #AutomotivePhotography #ProductionSA">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/18_reviews3.png" loading="lazy" alt="18_reviews3">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_07_parking.png" loading="lazy" alt="faq_07_parking">
           <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
+          <span class="time">14:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Big crews</div>
-          <p class="cap">Loved by creatives across Joburg. “Great facility, beautiful space, and the coffee rocks.” 5.0 from 180+ reviews.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives #TrustedStudio</p>
-          <button class="copy" data-t="Loved by creatives across Joburg. “Great facility, beautiful space, and the coffee rocks.” 5.0 from 180+ reviews.
+          <p class="cap">Parking? Yes, secure gated on-site parking for 25+ vehicles. Bring the whole crew.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #Parking #ProductionSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_07_parking.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Parking? Yes, secure gated on-site parking for 25+ vehicles. Bring the whole crew.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives #TrustedStudio">Copy caption</button>
-        </div>
-      </div></div>
-    </section>
-    <section class="day">
-      <div class="dhead"><span class="dn">Day 11</span><span class="dd">Sun 12 Jul</span><span class="dtheme">Camera-ready</span></div>
-      <div class="slots">
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/teaser_booking.jpg" loading="lazy" alt="teaser_booking">
-          <span class="fbadge" style="background:#c60d0d">Reel</span>
-          <span class="time">08:00</span>
-          <span class="play">&#9658;</span>
-        </div>
-        <div class="body">
-          <div class="angle">Camera-ready</div>
-          <p class="cap">Your date is waiting. Watch, then book at shamasestudios.co.za. Link in bio.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #ShootDay #StudioForHire</p>
-          <button class="copy" data-t="Your date is waiting. Watch, then book at shamasestudios.co.za. Link in bio.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #ShootDay #StudioForHire">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #Parking #ProductionSA">Copy caption</button>
+          </div>
         </div>
       </div>
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/19_makeup.png" loading="lazy" alt="19_makeup">
-          <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
-          
-        </div>
-        <div class="body">
-          <div class="angle">Camera-ready</div>
-          <p class="cap">Camera-ready on site. Dedicated hair, makeup and styling rooms, fitting rooms and showers. Arrive, prep, shoot.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #MakeupStudio #Styling #BTS #ContentCreatorSA</p>
-          <button class="copy" data-t="Camera-ready on site. Dedicated hair, makeup and styling rooms, fitting rooms and showers. Arrive, prep, shoot.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #MakeupStudio #Styling #BTS #ContentCreatorSA">Copy caption</button>
-        </div>
-      </div>
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/25_inspired.png" loading="lazy" alt="25_inspired">
-          <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
-          
-        </div>
-        <div class="body">
-          <div class="angle">Camera-ready</div>
-          <p class="cap">Come as a creative, leave inspired. It&#x27;s more than a studio, it&#x27;s the feeling of a good shoot day.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #CreativeSpace #ForTheCreatives #ShootDay</p>
-          <button class="copy" data-t="Come as a creative, leave inspired. It&#x27;s more than a studio, it&#x27;s the feeling of a good shoot day.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #CreativeSpace #ForTheCreatives #ShootDay">Copy caption</button>
-        </div>
-      </div></div>
-    </section>
-    <section class="day">
-      <div class="dhead"><span class="dn">Day 12</span><span class="dd">Mon 13 Jul</span><span class="dtheme">Room to breathe</span></div>
-      <div class="slots">
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/carousel_highlights.jpg" loading="lazy" alt="carousel_highlights">
           <span class="fbadge" style="background:#7a4bd6">Carousel</span>
-          <span class="time">08:00</span>
+          <span class="time">17:00</span>
           <span class="play">&#9658;</span>
         </div>
         <div class="body">
-          <div class="angle">Room to breathe</div>
           <p class="cap">The highlights in one swipe: the brands, the space, the rates. This is Shamase Studios.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioHireJHB #ProductionSA #BookNow</p>
-          <button class="copy" data-t="The highlights in one swipe: the brands, the space, the rates. This is Shamase Studios.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/carousel_highlights.mp4" target="_blank" rel="noopener">&#8681; Save all</a>
+            <button class="copy" data-t="The highlights in one swipe: the brands, the space, the rates. This is Shamase Studios.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #StudioHireJHB #ProductionSA #BookNow">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/23_breathe.png" loading="lazy" alt="23_breathe">
-          <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
-          
-        </div>
-        <div class="body">
-          <div class="angle">Room to breathe</div>
-          <p class="cap">Big ideas need room to breathe. 500 m2 of it. Come stretch out.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #CreativeSpace #StudioSpace #ForTheCreatives</p>
-          <button class="copy" data-t="Big ideas need room to breathe. 500 m2 of it. Come stretch out.
-
-#ShamaseStudios #StudioHireJHB #JoburgStudio #CreativeSpace #StudioSpace #ForTheCreatives">Copy caption</button>
-        </div>
-      </div>
-      <div class="slot">
-        <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/26_company.png" loading="lazy" alt="26_company">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/24_watching.png" loading="lazy" alt="24_watching">
           <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
+          <span class="time">20:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Room to breathe</div>
-          <p class="cap">You&#x27;re in good company. 180+ five-star creatives have shot here. Your name&#x27;s next.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ForTheCreatives #JoziCreatives #ClientLove</p>
-          <button class="copy" data-t="You&#x27;re in good company. 180+ five-star creatives have shot here. Your name&#x27;s next.
+          <p class="cap">Create like the world is watching. Because soon enough, it will be.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #ContentCreatorSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/24_watching.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Create like the world is watching. Because soon enough, it will be.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ForTheCreatives #JoziCreatives #ClientLove">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #ContentCreatorSA">Copy caption</button>
+          </div>
         </div>
       </div></div>
     </section>
     <section class="day">
-      <div class="dhead"><span class="dn">Day 13</span><span class="dd">Tue 14 Jul</span><span class="dtheme">Where creatives gather</span></div>
+      <div class="dhead"><span class="dn">Day 8</span><span class="dd">Thu 09 Jul</span><span class="dtheme">Brands + value</span></div>
       <div class="slots">
       <div class="slot">
         <div class="thumb">
@@ -702,106 +738,471 @@ body{font-family:'Montserrat',Arial,sans-serif;background:#ececef;color:#161616;
           <span class="play">&#9658;</span>
         </div>
         <div class="body">
-          <div class="angle">Where creatives gather</div>
           <p class="cap">Slow down and swipe. This is the feeling of a good shoot day at Shamase Studios.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere</p>
-          <button class="copy" data-t="Slow down and swipe. This is the feeling of a good shoot day at Shamase Studios.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/carousel_premium.mp4" target="_blank" rel="noopener">&#8681; Save all</a>
+            <button class="copy" data-t="Slow down and swipe. This is the feeling of a good shoot day at Shamase Studios.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/24_watching.png" loading="lazy" alt="24_watching">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/12_numbers.png" loading="lazy" alt="12_numbers">
           <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <span class="time">11:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Where creatives gather</div>
-          <p class="cap">Create like the world is watching. Because soon enough, it will be.</p>
-          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #ContentCreatorSA</p>
-          <button class="copy" data-t="Create like the world is watching. Because soon enough, it will be.
+          <p class="cap">The space by the numbers. 500 m2 open floor, 6 m ceiling, 25+ secure bays and a 5.0 rating. Built for real productions.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #FilmStudio #ProductionSA #ShootInJoburg</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/12_numbers.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="The space by the numbers. 500 m2 open floor, 6 m ceiling, 25+ secure bays and a 5.0 rating. Built for real productions.
 
-#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #ContentCreatorSA">Copy caption</button>
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #FilmStudio #ProductionSA #ShootInJoburg">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_08_power.png" loading="lazy" alt="faq_08_power">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">14:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Load-shedding? Covered. 3-phase power with a silent backup generator, so your shoot never stops.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #LoadShedding #BackupPower</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_08_power.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Load-shedding? Covered. 3-phase power with a silent backup generator, so your shoot never stops.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #LoadShedding #BackupPower">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/carousel_reviews.jpg" loading="lazy" alt="carousel_reviews">
+          <span class="fbadge" style="background:#7a4bd6">Carousel</span>
+          <span class="time">17:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">Swipe through the love. 180+ five-star reviews from real Joburg creatives.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/carousel_reviews.mp4" target="_blank" rel="noopener">&#8681; Save all</a>
+            <button class="copy" data-t="Swipe through the love. 180+ five-star reviews from real Joburg creatives.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #JoziCreatives">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/25_inspired.png" loading="lazy" alt="25_inspired">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">20:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Come as a creative, leave inspired. It&#x27;s more than a studio, it&#x27;s the feeling of a good shoot day.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #CreativeSpace #ForTheCreatives #ShootDay</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/25_inspired.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Come as a creative, leave inspired. It&#x27;s more than a studio, it&#x27;s the feeling of a good shoot day.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #CreativeSpace #ForTheCreatives #ShootDay">Copy caption</button>
+          </div>
+        </div>
+      </div></div>
+    </section>
+    <section class="day">
+      <div class="dhead"><span class="dn">Day 9</span><span class="dd">Fri 10 Jul</span><span class="dtheme">The details</span></div>
+      <div class="slots">
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/carousel_space.jpg" loading="lazy" alt="carousel_space">
+          <span class="fbadge" style="background:#7a4bd6">Carousel</span>
+          <span class="time">08:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">Swipe through the space. 500 m2 open floor, white cyclorama, drive-in access. Room for whatever you&#x27;re building.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #FilmStudio #ProductionSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/carousel_space.mp4" target="_blank" rel="noopener">&#8681; Save all</a>
+            <button class="copy" data-t="Swipe through the space. 500 m2 open floor, white cyclorama, drive-in access. Room for whatever you&#x27;re building.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #FilmStudio #ProductionSA">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/14_coffee.png" loading="lazy" alt="14_coffee">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">11:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Great work runs on good coffee. Barista on set, a proper green room, and a team that keeps the whole crew fuelled all day.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BaristaOnSet #GreenRoom #ShootDay #ContentCreatorSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/14_coffee.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Great work runs on good coffee. Barista on set, a proper green room, and a team that keeps the whole crew fuelled all day.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #BaristaOnSet #GreenRoom #ShootDay #ContentCreatorSA">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_09_cyc.png" loading="lazy" alt="faq_09_cyc">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">14:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Can you paint the cyc? Yes, fully paintable with acrylic PVA. We repaint to white after to keep it premium.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #Cyclorama #BookNow</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_09_cyc.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Can you paint the cyc? Yes, fully paintable with acrylic PVA. We repaint to white after to keep it premium.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #Cyclorama #BookNow">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/reel_teaser.jpg" loading="lazy" alt="reel_teaser">
+          <span class="fbadge" style="background:#c60d0d">Reel</span>
+          <span class="time">17:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">Quick look inside the room. 500 m2 of possibility. Book the space at the link in bio.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FilmStudio #StudioSpace #BookNow</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/reel_teaser.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="Quick look inside the room. 500 m2 of possibility. Book the space at the link in bio.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #FilmStudio #StudioSpace #BookNow">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/27_gather.png" loading="lazy" alt="27_gather">
           <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
+          <span class="time">20:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">Where creatives gather</div>
           <p class="cap">Where Joburg&#x27;s storytellers gather. The space behind the work you love.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #JoziCreatives #CreativeSpace #StorytellersSA</p>
-          <button class="copy" data-t="Where Joburg&#x27;s storytellers gather. The space behind the work you love.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/27_gather.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Where Joburg&#x27;s storytellers gather. The space behind the work you love.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #JoziCreatives #CreativeSpace #StorytellersSA">Copy caption</button>
+          </div>
         </div>
       </div></div>
     </section>
     <section class="day">
-      <div class="dhead"><span class="dn">Day 14</span><span class="dd">Wed 15 Jul</span><span class="dtheme">The close</span></div>
+      <div class="dhead"><span class="dn">Day 10</span><span class="dd">Sat 11 Jul</span><span class="dtheme">Room to create</span></div>
       <div class="slots">
       <div class="slot">
         <div class="thumb">
-          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/28_deserve.png" loading="lazy" alt="28_deserve">
-          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/reel_walkthrough.jpg" loading="lazy" alt="reel_walkthrough">
+          <span class="fbadge" style="background:#c60d0d">Reel</span>
           <span class="time">08:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">Take the full walkthrough. Every corner of the 500 m2 floor, in motion. Save this for your next shoot.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioTour #FilmStudio #ProductionSA #SaveThis</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/reel_walkthrough.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="Take the full walkthrough. Every corner of the 500 m2 floor, in motion. Save this for your next shoot.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioTour #FilmStudio #ProductionSA #SaveThis">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/15_crew.png" loading="lazy" alt="15_crew">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">11:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">The close</div>
+          <p class="cap">Big production? Bring the whole team. Open floor, drive-in access and 3-phase power, with room for 80+ crew.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ProductionSA #FilmCrew #BigProduction #ShootInJoburg</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/15_crew.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Big production? Bring the whole team. Open floor, drive-in access and 3-phase power, with room for 80+ crew.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #ProductionSA #FilmCrew #BigProduction #ShootInJoburg">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_10_access.png" loading="lazy" alt="faq_10_access">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">14:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Big set pieces? Our drive-in roller door fits up to a 10-ton truck. Bring it all in.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #DriveIn #ProductionSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_10_access.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Big set pieces? Our drive-in roller door fits up to a 10-ton truck. Bring it all in.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #DriveIn #ProductionSA">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/teaser_booking.jpg" loading="lazy" alt="teaser_booking">
+          <span class="fbadge" style="background:#c60d0d">Reel</span>
+          <span class="time">17:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">Your date is waiting. Watch, then book at shamasestudios.co.za. Link in bio.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #ShootDay #StudioForHire</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/teaser_booking.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="Your date is waiting. Watch, then book at shamasestudios.co.za. Link in bio.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #BookNow #ShootDay #StudioForHire">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/28_deserve.png" loading="lazy" alt="28_deserve">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">20:00</span>
+          
+        </div>
+        <div class="body">
           <p class="cap">Your ideas deserve a space this good. Stop settling for cramped and beige.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere</p>
-          <button class="copy" data-t="Your ideas deserve a space this good. Stop settling for cramped and beige.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/28_deserve.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Your ideas deserve a space this good. Stop settling for cramped and beige.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere">Copy caption</button>
+          </div>
+        </div>
+      </div></div>
+    </section>
+    <section class="day">
+      <div class="dhead"><span class="dn">Day 11</span><span class="dd">Sun 12 Jul</span><span class="dtheme">Ask us anything</span></div>
+      <div class="slots">
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/teaser_culture.jpg" loading="lazy" alt="teaser_culture">
+          <span class="fbadge" style="background:#c60d0d">Reel</span>
+          <span class="time">08:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">This is the feeling. Made for the ones who create. Come make your next thing here.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/teaser_culture.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="This is the feeling. Made for the ones who create. Come make your next thing here.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #CreativeSpace #MakeItHere">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/17_free.png" loading="lazy" alt="17_free">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">11:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">The extras are on us. Backup generator, all-day coffee, shoe covers for the cove, steamer and change room. Free while you shoot.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ShootDay #StudioSpace #ContentCreatorSA #ValueForMoney</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/17_free.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="The extras are on us. Backup generator, all-day coffee, shoe covers for the cove, steamer and change room. Free while you shoot.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #ShootDay #StudioSpace #ContentCreatorSA #ValueForMoney">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_11_crew.png" loading="lazy" alt="faq_11_crew">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">14:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">How big can you go? The floor is built for 80+ crew. Bring the whole production.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BigProduction #ProductionSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_11_crew.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="How big can you go? The floor is built for 80+ crew. Bring the whole production.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BigProduction #ProductionSA">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/teaser_reviews.jpg" loading="lazy" alt="teaser_reviews">
+          <span class="fbadge" style="background:#c60d0d">Reel</span>
+          <span class="time">17:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">Five stars, on repeat. Here&#x27;s what shooting at Shamase Studios feels like, straight from our clients.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #TrustedStudio</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/teaser_reviews.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="Five stars, on repeat. Here&#x27;s what shooting at Shamase Studios feels like, straight from our clients.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #FiveStars #ClientLove #TrustedStudio">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/29_story.png" loading="lazy" alt="29_story">
-          <span class="fbadge" style="background:#0e7a52">Feed post</span>
-          <span class="time">13:00</span>
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">20:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">The close</div>
           <p class="cap">Your story starts here. Book the room and let&#x27;s begin.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #BookNow #MakeItHere</p>
-          <button class="copy" data-t="Your story starts here. Book the room and let&#x27;s begin.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/29_story.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Your story starts here. Book the room and let&#x27;s begin.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #ForTheCreatives #BookNow #MakeItHere">Copy caption</button>
+          </div>
+        </div>
+      </div></div>
+    </section>
+    <section class="day">
+      <div class="dhead"><span class="dn">Day 12</span><span class="dd">Mon 13 Jul</span><span class="dtheme">The close</span></div>
+      <div class="slots">
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/posters/teaser_space.jpg" loading="lazy" alt="teaser_space">
+          <span class="fbadge" style="background:#c60d0d">Reel</span>
+          <span class="time">08:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">The space, in 8 seconds. 500 m2 open floor and a paintable cyclorama. Your set starts here.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #ShootDay</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/videos/teaser_space.mp4" target="_blank" rel="noopener">&#8681; Save video</a>
+            <button class="copy" data-t="The space, in 8 seconds. 500 m2 open floor and a paintable cyclorama. Your set starts here.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioSpace #Cyclorama #ShootDay">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/19_makeup.png" loading="lazy" alt="19_makeup">
+          <span class="fbadge" style="background:#0e7a52">Feed post</span>
+          <span class="time">11:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Camera-ready on site. Dedicated hair, makeup and styling rooms, fitting rooms and showers. Arrive, prep, shoot.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #MakeupStudio #Styling #BTS #ContentCreatorSA</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/19_makeup.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Camera-ready on site. Dedicated hair, makeup and styling rooms, fitting rooms and showers. Arrive, prep, shoot.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #MakeupStudio #Styling #BTS #ContentCreatorSA">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_12_view.png" loading="lazy" alt="faq_12_view">
+          <span class="fbadge" style="background:#d68a0b">Story</span>
+          <span class="time">14:00</span>
+          
+        </div>
+        <div class="body">
+          <p class="cap">Want to see it first? Book a free recce, we recommend it. Viewing link on our site.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #Recce #BookNow</p>
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faq_12_view.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Want to see it first? Book a free recce, we recommend it. Viewing link on our site.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #Recce #BookNow">Copy caption</button>
+          </div>
         </div>
       </div>
       <div class="slot">
         <div class="thumb">
           <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/30_close.png" loading="lazy" alt="30_close">
           <span class="fbadge" style="background:#d68a0b">Story</span>
-          <span class="time">18:30</span>
+          <span class="time">17:00</span>
           
         </div>
         <div class="body">
-          <div class="angle">The close</div>
           <p class="cap">Imagine. Create. Shamase Studios. Link in bio to book your date.</p>
           <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #ImagineCreate #BookNow #ForTheCreatives</p>
-          <button class="copy" data-t="Imagine. Create. Shamase Studios. Link in bio to book your date.
+          <div class="btns">
+            <a class="dl" href="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/30_close.png" target="_blank" rel="noopener">&#8681; Save image</a>
+            <button class="copy" data-t="Imagine. Create. Shamase Studios. Link in bio to book your date.
 
 #ShamaseStudios #StudioHireJHB #JoburgStudio #ImagineCreate #BookNow #ForTheCreatives">Copy caption</button>
+          </div>
+        </div>
+      </div>
+      <div class="slot">
+        <div class="thumb">
+          <img src="https://raw.githubusercontent.com/simzmkhwanazi/shamase-studio-video/main/docs/campaign/faqc_1.png" loading="lazy" alt="faqcar">
+          <span class="fbadge" style="background:#7a4bd6">Carousel</span>
+          <span class="time">20:00</span>
+          <span class="play">&#9658;</span>
+        </div>
+        <div class="body">
+          <p class="cap">Everything people ask before booking, answered. Swipe through the FAQ, then book at the link in bio. Save this one for later.</p>
+          <p class="tags">#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BookNow #StudioHireJHB</p>
+          <div class="btns">
+            <a class="dl" href="https://simzmkhwanazi.github.io/shamase-studio-video/campaign/faq_carousel/" target="_blank" rel="noopener">&#8681; Save slides</a>
+            <button class="copy" data-t="Everything people ask before booking, answered. Swipe through the FAQ, then book at the link in bio. Save this one for later.
+
+#ShamaseStudios #StudioHireJHB #JoburgStudio #StudioFAQ #GoodToKnow #BookNow #StudioHireJHB">Copy caption</button>
+          </div>
         </div>
       </div></div>
     </section>
-  <p class="foot">Aim for consistency over perfection. If a day is busy, the <b>08:00 reel</b> is the priority, it carries the most reach.<br>Reply to every comment in the first hour. Pin <b>Day 1</b> and <b>Day 14</b> to the top of your profile. &middot; Shamase Studios</p>
+  <p class="foot">Priority order if a day gets busy: the <b>08:00 reel</b> first (most reach), then the FAQ (saves you DMs).<br>Reply to comments in the first hour, and pin <b>Day 1</b> to the top of your profile. &middot; Shamase Studios</p>
 </div>
 <script>
 document.querySelectorAll('.copy').forEach(function(b){
   b.addEventListener('click',function(){
-    var t=b.getAttribute('data-t');
-    navigator.clipboard.writeText(t).then(function(){
+    navigator.clipboard.writeText(b.getAttribute('data-t')).then(function(){
       var o=b.textContent;b.textContent='Copied';b.classList.add('done');
       setTimeout(function(){b.textContent=o;b.classList.remove('done');},1400);
     });
